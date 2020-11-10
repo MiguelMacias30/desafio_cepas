@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @enologo.name %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @enologo.edad %>
+</p>
+
+<p>
+  <strong>Nacionalidad:</strong>
+  <%= @enologo.nacionalidad %>
+</p>
+
+<p>
+  <strong>Cargos:</strong>
+  <%= @enologo.cargos %>
+</p>
+
+<%= link_to 'Edit', edit_enologo_path(@enologo) %> |
+<%= link_to 'Back', enologos_path %>

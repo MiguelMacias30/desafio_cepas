@@ -1,0 +1,2 @@
+class Enologo < ApplicationRecord
+end

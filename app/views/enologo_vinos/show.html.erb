@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nota:</strong>
+  <%= @enologo_vino.nota %>
+</p>
+
+<p>
+  <strong>Enologo:</strong>
+  <%= @enologo_vino.enologo.name %>
+</p>
+
+<p>
+  <strong>Vino:</strong>
+  <%= @enologo_vino.vino.cepas %>
+</p>
+
+<%= link_to 'Edit', edit_enologo_vino_path(@enologo_vino) %> |
+<%= link_to 'Back', enologo_vinos_path %>

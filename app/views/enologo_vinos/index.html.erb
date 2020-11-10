@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notas y enologos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nota</th>
+      <th>Enologo</th>
+      <th>Vino</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enologo_vinos.each do |enologo_vino| %>
+      <tr>
+        <td><%= enologo_vino.nota %></td>
+        <td><%= enologo_vino.enologo.name %></td>
+        <td><%= enologo_vino.vino.cepas %></td>
+        <td><%= link_to 'Show', enologo_vino %></td>
+        <td><%= link_to 'Edit', edit_enologo_vino_path(enologo_vino) %></td>
+        <td><%= link_to 'Destroy', enologo_vino, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enologo Vino', new_enologo_vino_path %>
