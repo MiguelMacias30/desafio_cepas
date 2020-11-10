@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Vinos</h1>
-
+<%= link_to "enologo", enologos_path %>
+<%= link_to "vinos", vinos_path %>
+<%= link_to "Notas y enologo", enologo_vinos_path %>
+ <%= link_to "sing out", destroy_user_session_path, method: :delete, class:"btn btn-outline-primary"%>
 <table>
   <thead>
     <tr>
